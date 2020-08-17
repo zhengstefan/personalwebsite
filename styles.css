@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 150%;
+  color: #40514E;
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  /* in %: 16px=100%; Advantage: % scales if browser settings are chenged to a higher font size, px is static
+Alternative: em -> 1em=16px=100%
+Zoom: scales up the website, no difference between % and px/em
+font-sizes in em and % get  inherited with parent: font-size of body and h1 multiplies
+rem = root em -> ignores all inherited font sizes -> most reliable
+  */
+  color: #66BFBF;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: bolder;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+a {
+  color: #11999E;
+  text-decoration: none;
+}
+
+hr {
+  border-style: dotted none none none;
+  width: 7%;
+  border-width: 10px;
+  border-color: #11999E;
+}
+
+.top-container {
+  background-color: #e4f9f5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  width: 80%;
+  margin: 100px auto 100px auto;
+  line-height: 2;
+}
+
+.bottom-container {
+  background-color: #e4f9f5;
+  padding: 50px 0 50px 0;
+}
+
+.profile {
+  text-align: left;
+}
+
+.experience-row {
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.learner {
+  text-decoration: none;
+  /*alternative: underline */
+}
+
+.top-cloud {
+  position: absolute;
+  display: block;
+  right: 300px;
+  top: 40px;
+  width: 300px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  display: block;
+  left: 250px;
+  bottom: 300px;
+}
+
+.duck {
+  width: 300px;
+  padding-bottom: 100px;
+}
+
+.startup-picture {
+  width: 400px;
+  float: left;
+  margin: auto 30px 50px auto;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.consulting-picture {
+  width: 400px;
+  float: right;
+  margin: auto auto 50px 30px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 80% 50%;
+  border-radius: 50%;
+}
+
+.profile-picture {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 50% 10%;
+  border: 10px solid #66BFBF;
+  border-radius: 50%;
+  float: right;
+  margin-left: 30px;
+}
+
+.web-development-picture {
+  width: 400px;
+  /* alternative: width: 25%; -> 25% of div width */
+  float: left;
+  /* clear: left; -> Anti-Float; use float only for wrapping text!
+  Use positioning for everything else */
+  margin: auto 30px 50px auto;
+  height: 400px;
+  object-fit: cover;
+  object-position: 20% 60%;
+  border-radius: 50%;
+}
+
+.consulting {
+  clear: left;
+}
+
+.web-development {
+  clear: right;
+}
+
+.clear {
+  clear: left;
+}
+
+.buttom-email {
+  background: #11CDD4;
+  background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+  background-image: linear-gradient(to bottom, #11CDD4, #11999E);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 10px 40px 10px 40px;
+  box-shadow: 1px 1px 20px 0px #000000;
+  -webkit-box-shadow: 1px 1px 20px 0px #000000;
+  -moz-box-shadow: 1px 1px 20px 0px #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #11999E 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.buttom-email:hover {
+  background: #30E3BE;
+  border: solid #2BC4AB 1px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.linkedin-logo {
+  width: 4%;
+}
+
+.copyright {
+  margin-bottom: 0;
+}
